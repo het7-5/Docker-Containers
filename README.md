@@ -38,20 +38,22 @@ It runs a PostgreSQL database seeded with sample trip data and a Python applicat
 └── README.md
 ```
 ## ⚙️ Environment Configuration
-
-POSTGRES_USER=appuser
-POSTGRES_PASSWORD=secretpw
-POSTGRES_DB=appdb
+```text
+POSTGRES_USER=<appuser>
+POSTGRES_PASSWORD=<secretpw>
+POSTGRES_DB=<dbname>
 
 DB_HOST=db
-DB_PORT=5432
-DB_USER=appuser
-DB_PASS=secretpw
-DB_NAME=appdb
+DB_PORT=<5432>
+DB_USER=<appuser>
+DB_PASS=<secretpw>
+DB_NAME=<dbname>
 
 APP_TOP_N=10
-
+```
 ## How to Run
+create a .env based on above sample
+
 -Using command
 ```
 docker compose up --build
